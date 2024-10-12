@@ -43,6 +43,7 @@ func uniqueHousesVisited(from filePath: String) -> Int? {
     }
   }
 
+  // return unique number of houses visited
   return visitedHouses.count
 }
 
