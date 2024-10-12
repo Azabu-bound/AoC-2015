@@ -10,8 +10,8 @@ func findLowestNumber(secretKey: String) -> Int {
     let digest = Insecure.MD5.hash(data: input.data(using: .utf8)!)
     let md5String = digest.map { String(format: "%02hhx", $0) }.joined()
 
-    // check if the hash begins with 5 zeros
-    if md5String.hasPrefix("00000") { return number }
+    // check if the hash begins with 6 zeros
+    if md5String.hasPrefix("000000") { return number }
     number += 1
   }
 }
